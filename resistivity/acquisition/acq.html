@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>DC Resistivity: Data Acquisition</title>
+    <meta charset="utf-8">
+    <link href="../../main_style.css" rel="stylesheet" type="text/css">
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        section.subText {
+            font-size: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<nav include="../RESheader.html"></nav>
+<div class="mainContainer center_container" style="width: 1300px">
+    <article class="main" style="width: 1000px">
+        <header>
+            <div class="header" style="width: 1000px">
+                <h1>DC Resistivity: Data Acquisition</h1>
+            </div>
+            <h2>Acquiring Your Data</h2>
+        </header>
+        <p>
+            Using the survey parameters you defined in the previous exercise you should now generate field
+            observations for interpretation. Fill in the specified parameters in the form that you download below, and
+            a data set will be generated for you.
+            <br/>
+            <br/>
+            If your survey involves multiple soundings, simply use this form to generate data for each sounding.
+            Do not submit the cost of each sounding separately. Submit only the total survey cost and repeat
+            this cost for each sounding.
+            All location parameters must be specified in
+            <a target="_blank" href="../../INFO/surveycor.html">standard survey coordinates</a>.
+        </p>
+
+
+        <hr class="gray"/>
+
+        <table style="margin: 10px 10px; padding: 10px 10px;">
+            <tr>
+                <th colspan="2" style="background-color: #a6c9e2; color: whitesmoke;">Download</th>
+            </tr>
+            <tr>
+                <td><a href="ResACQ.zip"><img src="../../MISC/install/downloadJava.png"></a></td>
+                <td><a href="ResACQ.zip">ResACQ.zip</a> <i style="font-weight: normal; font-size: 10px;"> ~56 kilobytes</i></td>
+            </tr>
+        </table>
+        <p style="background-color: yellow">
+            <b>
+                *For instructions on how to extract and use the acquisition form, <a href="../../installACQ.html" target="_blank">click here</a>.
+            </b>
+        </p>
+
+        <hr>
+        <p>
+            <i>Survey Type:</i> Type of electrode configuration to use when acquiring the data. Two
+            choices are possible: Schlumberger or Wenner configurations.
+        </p>
+        <p>
+            <i>X Coordinate of Sounding Midpoint:</i> Indicates the east-west position within the survey
+            area of the center of the DC sounding.
+        <p>
+            <i>Y Coordinate of the Sounding Midpoint:</i> Indicates the north-south position within the survey
+            area of the center of the DC sounding.
+        <p>
+            <i>Minimum Electrode Spacing (AB/2 for Schlumberger, L for Wenner):</i>
+            Specify the minimum electrode spacing to be using in acquiring the data in meters.
+            The exact spacing specified depends on the Survey type chosen above. If a Schlumberger survey
+            is selected, the distance <i>AB/2</i> represents the distance from the survey midpoint to one of the
+            current electrodes. If a Wenner array is selected, the distance <i>L</i> represents the spacing between
+            each of the electrodes used.
+        <p>
+            <i>Number of Soundings per Decade in Electrode Spacing:</i> This parameter specifies the number
+            of current electrode positions at which to collect data per decade (factor of 10) change in
+            electrode distance. <b>This must be an integer.</b>
+        <p>
+            <i>Number of Decades in Electrode Distance Over Which to Collect Soundings:</i> This parameter
+            specifies the number of decades in electrode distance over which to collect data. <b>This must
+            also be an integer.</b> If your survey extends beyond the site boundaries, readings will only
+            be returned for those electrode configurations contained within the field area.
+        <p>
+            As a simple example, if you were to choose the minimum electrode spacing to equal 0.25 m,
+            the number of soundings per decade in electrode spacing to equal 10, and the number
+            of decades in electrode distance over which to collect soundings to equal 3, a survey
+            would be returned to you that incorporates electrode spacings of
+        <p>
+            0.25,0.5,0.75.1.0,1.25,1.5,1.75,2.0,2.25,2.5,5.0,7.5,10.0,12.5,15.0,17.5,20.0,22.5,25.0,50.0,75.0,100.0,125.0,150.0,175.0,200.0,225.0,
+            and 250.0.
+        <p>
+            <i>Measurements per Electrode Configuration:</i>
+            Number of voltage readings taken at each electrode position. Reported apparent resistivity
+            will represent the average of the readings taken. Multiple readings per
+            station can be used to reduce the level of random noise associated with each measurement.
+        </p>
+
+    </article>
+</div>
+
+<!--padding-->
+
+<div id="spacer"></div>
+<div class="footer_home"><br>
+    <div class="footer" style=" background:rgba(15,15,15,.70); color: ivory; width: 100%; margin-top: 0px">
+        <footer style="width: 650px; margin-right: auto; margin-left: auto">
+            <p style="text-align: center">
+                This site last updated: December 14th, 2016
+
+                <a href="mailto:reek@unlv.nevada.edu" class="footerstyle"> Jason M. Reek</a> 2015 - 2016
+                <a href="mailto:tboyd@mines.edu" class="footerstyle">Thomas M. Boyd</a>, 1996 - 2002
+                <br>
+                All rights reserved.
+
+                All files included in this site are not distributed as public
+                domain software, but are freely available under the following
+                <a href="../../license.html" class="footerstyle">license</a>.
+                <br>
+                Copyright (c)
+                <br>
+            </p>
+
+        </footer>
+    </div>
+</div>
+
+<script src="../../include.js"></script>
+
+</body>
+</html>
+

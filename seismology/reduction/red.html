@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Refraction Seismic: Data Reduction and Interpretation</title>
+    <meta charset="utf-8">
+    <link href="../../main_style.css" rel="stylesheet" type="text/css">
+    <style>
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<nav include="../SEISheader.html"></nav>
+<div class="mainContainer center_container" style="width: 1300px">
+    <article class="main" style="width: 1000px">
+        <header>
+            <div class="header" style="width: 1000px">
+                <h1>Refraction Seismic: Data Reduction and Interpretation</h1>
+            </div>
+            <h3>BACKGROUND</h3>
+        </header>
+        <p>
+            Like resistivity, refraction seismic observations incorporate the use of a controlled source.
+            Also, like resistivity, there is very little, if any, data reduction that needs to be done to the
+            observations before interpretation.
+            Assuming random noise can be effectively reduced by stacking individual sources,
+            the accuracy of the data is affected most by geologic noise and depends on
+            questions such as whether the geology satisfies the theoretical assumptions upon which
+            the interpretative process depends.
+        </p>
+        <p>
+            This exercise is similar to that used in the previous interpretive
+            exercises.
+            Once again, the emphasis is on codifying the process, gaining a conceptual understanding
+            of the physics, and identifying sources of error.
+        </p>
+        <h3>OBJECTIVES</h3>
+        <p>
+            There are five learning objectives:
+        </p>
+        <ul>
+            <li>
+                Continue to refine your understanding of the interpretative process and the role of
+                modeling, validation, and sensitivity analysis,
+            </li>
+
+            <li>
+                Develop a conceptual understanding of the physical parameters in a refraction seismic survey
+                and how they are related to the data,
+            </li>
+            <li>
+                Continue to gain experience in manual inversion of data where the solution must be
+                built from the surface down,
+            </li>
+            <li>
+                Begin to recognize the necessity of acquiring refraction seismic observations in two directions
+                along the same line, and
+            </li>
+
+            <li>
+                Codify the sources of ambiguity and create rules for the interaction of model
+                parameters when inverting resistivity data.
+            </li>
+        </ul>
+        <p>
+            To continue with this exercise, you first need to
+            <a href="../ACQUISITION/acq.html" target="_blank">
+                generate a refraction seismic data set using your survey parameters
+            </a>
+            and download them to your computer.
+        </p>
+        <p>
+        <h3>PROCEDURE</h3>
+        <p>
+            Like resistivity data, refraction seismic observations require little, if any, preprocessing.
+            We can, therefore, proceed directly to the interpretation process.
+            The initial stage of the interpretative process, which is not replicated in your suite of observations, is
+            the picking of first arrival times from the raw seismic traces.
+            As we saw in the
+            <a href="../OBSERVATIONS/obs.html" target="_blank">
+                Observations section
+            </a>
+            , this task can be quite challenging.
+            Because the times of first arrival can often be difficult to unambiguously pick, this process should be
+            considered
+            part of the interpretative process.
+            Thus, even at this level, a geophysicist brings to the table his own prejudices and expectations about what
+            the
+            data should show.
+        </p>
+        <p>
+            With this warning, let's assume that the arrivals derived from your observations have been chosen with
+            relatively
+            high reliability.
+        </p>
+        <ul>
+            <li> First, you need to identify whether or not you are dealing with dipping horizons and to get a
+                preliminary
+                estimate of the structure. You will <i>only</i> be able to identify dipping beds if you acquired seismic
+                observations along the same line in two directions.
+                If you didn't do this, you will have to assume that the beds are horizontal.
+                Import all of the observations derived from the same line into your favorite spreadsheet and interpret
+                using
+                the slope-intercept method.
+                If dipping beds are indicated, note the direction of dip and estimate the size of the dip for each.
+            </li>
+            <li>
+                Now, download the modeling program zip below.
+                <hr class="gray">
+                <table style="margin: 10px 10px; padding: 10px 10px;">
+                    <tr>
+                        <th colspan="2" style="background-color: #a6c9e2; color: whitesmoke;">Download</th>
+                    </tr>
+                    <tr>
+                        <td><a href="SeismologyReduction.zip"><img src="../../MISC/install/downloadPic.png"></a></td>
+                        <td><a href="SeismologyReduction.zip">SeismologyReduction.zip</a> <i style="font-weight: normal; font-size: 10px;"> ~349 kilobytes</i></td>
+                    </tr>
+                </table>
+                <p style="background-color: yellow">
+                    <b>*For instructions on how to install and use the survey java applet <a href="../../install.html" target="_blank">click here</a>.</b>
+                </p>
+                <hr class="gray">
+            </li>
+            <li>
+                As was the case for the resistivity observations, these scripts will allow you to interpret the
+                observations
+                one source location at a time.
+                Using your preliminary estimates of the structure derived above, now attempt to refine these estimates
+                by
+                modeling
+                all of the source/receiver combinations acquired.
+                Remember, you must come up with consistent models.
+                That is, if the subsurface can be approximated by dipping layers, then the dips and depths implied by
+                different
+                sources acquired over the same line should be the same.
+            </li>
+            <li>
+                Once you have found a preferred model(s), estimate the uncertainties in the model parameters. Do this by
+                systematically varying the model parameters about your preferred values and find all values that fit the
+                observed data to within the data uncertainties.
+            </li>
+            <li>
+                Finally, are there other models that could fit the data equally as well as your preferred model that
+                have
+                very different parameters? If these models are geologically plausible, describe what they are and give
+                your
+                rationale for choosing a preferred model(s).
+            </li>
+        </ul>
+
+        <h3>OUTCOMES</h3>
+        <p>
+            The final report should be in the form of a summary report to your
+            client. The heading can be in standard memo format. The summary report should include the following:
+        </p>
+        <ul>
+            <li> A brief review of the basis for the survey design (statement of the problem),</li>
+            <li>
+                A summary of the data acquisition and interpretation procedures (you may want to refer to a flow
+                chart in the appendices), and
+            </li>
+            <li>
+                A clear and concise statement of your interpretation, and an indication of the action
+                that will be required to refine and validate that interpretation.
+            </li>
+        </ul>
+        <p>
+            As usual, the body of the report must be no longer than two type-written pages. It is important, however, to
+            provide
+            enough information (in the appendices) for the client's geophysical staff or consultant to be able to check
+            any of your work. This would include:
+        </p>
+        <ul>
+            <li>A tabulation of the field data,</li>
+            <li>A description of the acquisition parameters used, and</li>
+            <li>A narrative discussion of how and why you chose the "possible" models for each anomaly.</li>
+        </ul>
+        <p>
+            As always, remember that the your report is also a sales document; in this case, instead of selling your
+            services, it is selling your competence and the quality of your work. Also remember that your clients are
+            busy executives that probably are out of touch with the technical state of the art. It must communicate
+            quickly and effectively, but it also should convey a sense of competence and professionalism.
+        </p>
+    </article>
+</div>
+<!--padding-->
+
+<div id="spacer"></div>
+<div class="footer_home"><br>
+    <div class="footer" style=" background:rgba(15,15,15,.70); color: ivory; width: 100%; margin-top: 0px">
+        <footer style="width: 650px; margin-right: auto; margin-left: auto">
+            <p style="text-align: center">
+                This site last updated: December 14th, 2016
+
+                <a href="mailto:reek@unlv.nevada.edu" class="footerstyle"> Jason M. Reek</a> 2015 - 2016
+                <a href="mailto:tboyd@mines.edu" class="footerstyle">Thomas M. Boyd</a>, 1996 - 2002
+                <br>
+                All rights reserved.
+
+                All files included in this site are not distributed as public
+                domain software, but are freely available under the following
+                <a href="../../license.html" class="footerstyle">license</a>.
+                <br>
+                Copyright (c)
+                <br>
+            </p>
+
+        </footer>
+    </div>
+</div>
+
+<script src="../../include.js"></script>
+
+</body>
+</html>
